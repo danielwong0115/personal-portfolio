@@ -30,21 +30,21 @@ export default function Home() {
       <section className="mt-16 max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
         <IntroBlock
           title="About Me"
-          description="I'm Daniel Wong, a Computer Science undergrad passionate about creative solutions and collaborative problem-solving."
+          description="I&#39;m Daniel Wong, a Computer Science undergrad passionate about creative solutions and collaborative problem-solving."
           image="/images/homeAbout.jpg"
           alt="About"
         />
 
         <IntroBlock
           title="Interests"
-          description="I'm particularly interested in data science, software development, and transportation logistics."
+          description="I&#39;m particularly interested in data science, software development, and transportation logistics."
           image="/images/homeInterests.png"
           alt="Interests"
         />
 
         <IntroBlock
           title="Contact & Connect"
-          description="I'm currently seeking internship opportunities in software development, data science, or transportation logistics. Let’s connect!"
+          description="I&#39;m currently seeking internship opportunities in software development, data science, or transportation logistics. Let’s connect!"
           image="/images/homeContact.png"
           alt="Contact"
         />
