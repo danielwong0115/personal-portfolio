@@ -53,7 +53,7 @@ export default function AboutPage() {
 
       <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80">
         <Image
-          src="/images/aboutpic.jpg"
+          src="./images/aboutpic.jpg"
           alt="About Me"
           fill
           className="rounded-3xl object-cover"
