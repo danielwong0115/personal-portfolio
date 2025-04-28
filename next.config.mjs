@@ -2,8 +2,8 @@
 const isGithubPages = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-  basePath: isGithubPages ? '/your-repo-name' : '',
-  assetPrefix: isGithubPages ? '/your-repo-name/' : '',
+  basePath: isGithubPages ? '/personal-portfolio' : '',
+  assetPrefix: isGithubPages ? '/personal-portfolio/' : '',
   images: {
     unoptimized: true,
   },
