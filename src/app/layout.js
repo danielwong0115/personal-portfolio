@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} dark`}>
       <body className="min-h-screen flex flex-col antialiased">
         <Navbar />
         <main className="flex-1 pt-16 md:pt-20">{children}</main>

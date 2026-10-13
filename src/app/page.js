@@ -1,4 +1,8 @@
 import IntroBlock from "@/components/IntroBlocks";
+import Image from "next/image";
+
+const imagePath = (filename) =>
+  `${process.env.NODE_ENV === "production" ? "/personal-portfolio" : ""}/images/${filename}`;
 
 export default function Home() {
   return (
@@ -19,9 +23,11 @@ export default function Home() {
 
         {/* This will be my image */}
         <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
-          <img
-            src="./images/homePic.png" // LinkedIn Image!!!
+          <Image
+            src={imagePath("homePic.png")}
             alt="Daniel Wong"
+            width={256}
+            height={256}
             className="w-64 h-64 rounded-full object-cover shadow-md"
           />
         </div>
@@ -31,21 +37,21 @@ export default function Home() {
         <IntroBlock
           title="About Me"
           description="I&#39;m Daniel Wong, a Computer Science undergrad passionate about creative solutions and collaborative problem-solving."
-          image="./images/homeAbout.jpg"
+          image={imagePath("homeAbout.jpg")}
           alt="About"
         />
 
         <IntroBlock
           title="Interests"
           description="I&#39;m particularly interested in data science, software development, and transportation logistics."
-          image="./images/homeInterests.png"
+          image={imagePath("homeInterests.png")}
           alt="Interests"
         />
 
         <IntroBlock
           title="Contact & Connect"
           description="I&#39;m currently seeking internship opportunities in software development, data science, or transportation logistics. Let’s connect!"
-          image="./images/homeContact.png"
+          image={imagePath("homeContact.png")}
           alt="Contact"
         />
       </section>
