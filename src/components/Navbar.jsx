@@ -11,7 +11,7 @@ export default function Navbar() {
           <NavItem href="/" label="Home" />
         </li>
         <li>
-          <NavItem href="/about" label="About" />
+          <NavItem href="/projects" label="Projects" />
         </li>
         <li>
           <NavItem href="/interests" label="Interests" />
