@@ -12,7 +12,7 @@ export const metadata = {
   title: "All About Daniel Wong!!!",
   description: "Portfolio of Daniel Wong",
   icons: {
-    icon: "/images/icon.png",
+    icon: "./images/myIcon.png",
   },
 };
 
