@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function TypewriterHeading({ text, speed = 80 }) {
+export default function TypewriterHeading({ text, speed = 80, onComplete }) {
   const [displayedText, setDisplayedText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
 
@@ -14,6 +14,7 @@ export default function TypewriterHeading({ text, speed = 80 }) {
     if (prefersReducedMotion) {
       setDisplayedText(text);
       setShowCursor(false);
+      onComplete?.();
       return;
     }
 
@@ -26,6 +27,7 @@ export default function TypewriterHeading({ text, speed = 80 }) {
       if (characterIndex === text.length) {
         window.clearInterval(timer);
         cursorTimer = window.setTimeout(() => setShowCursor(false), 750);
+        onComplete?.();
       }
     }, speed);
 
@@ -33,7 +35,7 @@ export default function TypewriterHeading({ text, speed = 80 }) {
       window.clearInterval(timer);
       window.clearTimeout(cursorTimer);
     };
-  }, [speed, text]);
+  }, [onComplete, speed, text]);
 
   return (
     <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-bold text-gray-900 dark:text-white mb-4">

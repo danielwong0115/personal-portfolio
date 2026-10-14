@@ -36,3 +36,33 @@ body {
 .typewriter-cursor {
   animation: typewriter-cursor-blink 2s ease-in-out infinite;
 }
+
+@keyframes hero-copy-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-copy-hidden {
+  opacity: 0;
+}
+
+.hero-copy-visible {
+  animation: hero-copy-slide-in 900ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-copy-hidden {
+    opacity: 1;
+  }
+
+  .hero-copy-visible {
+    animation: none;
+  }
+}

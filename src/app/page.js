@@ -1,6 +1,6 @@
 import IntroBlock from "@/components/IntroBlocks";
 import Image from "next/image";
-import TypewriterHeading from "@/components/TypewriterHeading";
+import AnimatedHeroText from "@/components/AnimatedHeroText";
 
 const imagePath = (filename) =>
   `${process.env.NODE_ENV === "production" ? "/personal-portfolio" : ""}/images/${filename}`;
@@ -10,14 +10,7 @@ export default function Home() {
     <>
       <section className="flex flex-col md:flex-row items-center justify-between mx-auto max-w-6xl p-6 md:p-12 bg-white dark:bg-gray-900 border-1 border-gray-300 dark:border-gray-600 shadow-lg rounded-lg mt-10">
         <div className="md:w-1/2 text-left">
-          <TypewriterHeading text="Hi! I'm Daniel Wong" />
-          <h3 className="text-xl md:text-2xl mb-3 text-gray-800 dark:text-gray-200">
-            Passionate software developer specializing in building exceptional
-            digital experiences.
-          </h3>
-          <p className="text-lg text-gray-700 dark:text-gray-300">
-            Welcome to my portfolio! Dive in to explore my work!
-          </p>
+          <AnimatedHeroText />
         </div>
 
         {/* This will be my image */}
