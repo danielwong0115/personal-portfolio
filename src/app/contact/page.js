@@ -9,7 +9,7 @@ export default function ContactPage() {
         I’m always open to opportunities in{" "}
         <span className="font-semibold">Software Development</span>,{" "}
         <span className="font-semibold">Data Science</span>, and{" "}
-        <span className="font-semibold">Transportation</span>. I also welcome
+        <span className="font-semibold">Consulting</span>. I also welcome
         other opportunities where I can apply my skills in meaningful ways.
       </p>
 
@@ -24,10 +24,10 @@ export default function ContactPage() {
             <h2 className="text-base font-semibold uppercase">Email</h2>
           </div>
           <a
-            href="mailto:danielwong2026@u.northwestern.edu"
+            href="mailto:daniellwong442@gmail.com"
             className="text-lg text-blue-600 underline"
           >
-            danielwong2026@u.northwestern.edu
+            daniellwong442@gmail.com
           </a>
         </div>
 

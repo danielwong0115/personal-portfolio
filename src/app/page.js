@@ -35,21 +35,21 @@ export default function Home() {
       <section className="mt-16 max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
         <IntroBlock
           title="About Me"
-          description="I&#39;m Daniel Wong, a Computer Science undergrad passionate about creative solutions and collaborative problem-solving."
+          description="I’m a recent Northwestern graduate (B.S./M.S. in Computer Science) who enjoys building across the stack. My experience spans cloud engineering on Azure and AWS, full-stack development with React, and machine learning research in Python. I’m looking for software engineering roles where I can keep growing across cloud, data, and AI."
           image={imagePath("homeAbout.jpg")}
           alt="About"
         />
 
         <IntroBlock
-          title="Interests"
-          description="I&#39;m particularly interested in data science, software development, and transportation logistics."
-          image={imagePath("homeInterests.png")}
-          alt="Interests"
+          title="Projects"
+          description="Hands-on work across data, APIs, and product development. Explore what I’ve built, from internship work on a production site to personal projects that came out of my own curiosity and hobbies. Each one shows a different side of how I build."
+          image={imagePath("homeProjects.png")}
+          alt="Projects"
         />
 
         <IntroBlock
           title="Contact & Connect"
-          description="I&#39;m currently seeking internship opportunities in software development, data science, or transportation logistics. Let’s connect!"
+          description="I’m currently seeking full-time roles in software engineering, data science, and technology consulting. I’m someone who picks things up quickly, communicates clearly across technical and non-technical teams, and enjoys working through hard problems with others. I’d love to connect!"
           image={imagePath("homeContact.png")}
           alt="Contact"
         />

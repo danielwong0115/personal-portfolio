@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="mt-20">
       <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
-        <p>© 2025 Daniel Wong. All rights reserved.</p>
+        <p>© 2026 Daniel Wong. All rights reserved.</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
             <a
@@ -27,7 +27,7 @@ export default function Footer() {
           <li>
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/dl-wong/"
+              href="https://github.com/danielwong0115"
               className="hover:underline"
             >
               GitHub

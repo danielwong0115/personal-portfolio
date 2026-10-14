@@ -7,21 +7,21 @@ export default function InterestsPage() {
 
       <InterestSection
         title="Software Development"
-        text="I’m drawn to software development because I love solving complex problems and bringing ideas to life through code. Whether it’s web apps, backend services, or building interfaces, I enjoy every stage of the development cycle."
+        text="I enjoy the problem-solving that happens throughout the software engineering, from deciding how to architect something to debugging a bug that doesn’t make sense to finding a cleaner solution than my first attempt. Working across frontend interfaces, backend services, and cloud infrastructure has shown me how much of the craft is understanding how all the pieces fit together, and I like building things that help people's needs."
         imageSrc="./images/cloudComputing.jpg"
       />
 
       <InterestSection
         title="Data Science & Machine Learning"
-        text="I enjoy uncovering insights from data and leveraging machine learning models to make impactful decisions. My curiosity in patterns and automation fuels my passion in this field."
+        text="I’m interested in the practical side of data science and machine learning, where models have to work on messy data and hold up in real use. I’ve applied unsupervised clustering to over 4 million GPS points in my research, trained and evaluated models in Python, and built AI gateways on AWS Bedrock. I want to take that work further into production systems that teams and clients rely on every day."
         imageSrc="./images/clustering.jpg"
         reverse
       />
 
       <InterestSection
-        title="Transportation Logistics"
-        text="I’m passionate about solving real-world mobility problems. Through my research group at Northwestern, I use unsupervised learning and time-series clustering models like TimeSeriesDBScan to infer transportation modes and automate Transportation Security Index (TSI) calculations. This hands-on work has shown me the importance of data and tech in improving how we move and plan."
-        imageSrc="./images/transportationLogistics.jpg"
+        title="Consulting"
+        text="I’m especially interested in client-facing work, where I get to move across industries and domains and pick up new tools and ways of thinking along the way. I enjoy understanding what a client actually needs, translating it into something a team can build, and seeing it make a real difference for them. That mix of technical problem-solving and working closely with people is what draws me to consulting."
+        imageSrc="./images/consultingInterests.jpg"
       />
     </div>
   );

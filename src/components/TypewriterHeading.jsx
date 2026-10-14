@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function TypewriterHeading({ text, speed = 80 }) {
   const [displayedText, setDisplayedText] = useState("");
+  const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia(
@@ -12,20 +13,26 @@ export default function TypewriterHeading({ text, speed = 80 }) {
 
     if (prefersReducedMotion) {
       setDisplayedText(text);
+      setShowCursor(false);
       return;
     }
 
     let characterIndex = 0;
+    let cursorTimer;
     const timer = window.setInterval(() => {
       characterIndex += 1;
       setDisplayedText(text.slice(0, characterIndex));
 
       if (characterIndex === text.length) {
         window.clearInterval(timer);
+        cursorTimer = window.setTimeout(() => setShowCursor(false), 750);
       }
     }, speed);
 
-    return () => window.clearInterval(timer);
+    return () => {
+      window.clearInterval(timer);
+      window.clearTimeout(cursorTimer);
+    };
   }, [speed, text]);
 
   return (
@@ -33,7 +40,9 @@ export default function TypewriterHeading({ text, speed = 80 }) {
       <span className="sr-only">{text}</span>
       <span aria-hidden="true">
         {displayedText}
-        <span className="ml-1 inline-block h-[0.9em] w-[3px] translate-y-[0.08em] animate-pulse bg-current" />
+        {showCursor && (
+          <span className="typewriter-cursor ml-1 inline-block h-[0.85em] w-[5px] translate-y-[0.08em] bg-current" />
+        )}
       </span>
     </h1>
   );
